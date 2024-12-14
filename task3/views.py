@@ -12,4 +12,4 @@ class Shop(TemplateView):
 
 
 class Basket(TemplateView):
-    template_name = 'third_task/bucket_template.html'
+    template_name = 'third_task/basket_template.html'

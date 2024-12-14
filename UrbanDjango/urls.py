@@ -18,13 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 from task2.views import Index, index
-# from task3.views import Main, Shop, Basket
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('', include('task3.urls', namespace='task3')),
-    # path('platform/', Main.as_view(), name='platform'),
-    # path('shop/', Shop.as_view(), name='shop'),
-    # path('basket/', Basket.as_view(), name='basket'),
+    path('index/', Index.as_view(), name='index2'),
 ]
