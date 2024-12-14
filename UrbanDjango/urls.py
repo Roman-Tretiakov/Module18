@@ -22,6 +22,7 @@ from task2.views import Index, index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('', include('task3.urls', namespace='task3')),
+    path('index/', include('task3.urls', namespace='task3')),
+    path('platform/', include('task4.urls', namespace='task4')),
     path('index/', Index.as_view(), name='index2'),
 ]

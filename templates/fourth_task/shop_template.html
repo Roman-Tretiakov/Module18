@@ -1,0 +1,24 @@
+{% extends 'fourth_task\menu.html' %}
+
+{% block pagename %}
+  <div>
+      <h1 style="margin-left: 42px;">{{ games }}</h1>
+  </div>
+{% endblock %}
+
+{% block menu %}
+  {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <Ul style="padding-left: 4em;">
+        {% for i in game_list %}
+        <li>
+            <p>
+                <h3 style="display: inline;">{{ i }}</h3>
+                <button style="display: inline;">{{ buy_button }}</button>
+            <p>
+        </li>
+        {% endfor %}
+    </Ul>
+{% endblock %}
