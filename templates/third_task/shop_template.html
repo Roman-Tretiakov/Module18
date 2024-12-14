@@ -6,30 +6,30 @@
 </head>
 <body>
     <div>
-        <h1 style="margin-left: 42px;">Игры</h1>
+        <h1 style="margin-left: 42px;">{{ games }}</h1>
     </div>
     <Ul style="padding-left: 4em;">
         <li>
             <p>
-                <h3 style="display: inline;">Atomic Heart</h3>
-                <button style="display: inline;">Купить</button>
+                <h3 style="display: inline;">{{ game_1 }}</h3>
+                <button style="display: inline;">{{ buy_button }}</button>
             <p>
         </li>
         <li>
             <p>
-                <h3 style="display: inline;">Cyberpunk 2077</h3>
-                <button style="display: inline;">Купить</button>
+                <h3 style="display: inline;">{{ game_2 }}</h3>
+                <button style="display: inline;">{{ buy_button }}</button>
             <p>
         </li>
         <li>
             <p>
-                <h3 style="display: inline;">PayDay 2</h3>
-                <button style="display: inline;">Купить</button>
+                <h3 style="display: inline;">{{ game_3 }}</h3>
+                <button style="display: inline;">{{ buy_button }}</button>
             <p>
         </li>
     </Ul>
     <button style="margin-left: 40px;">
-        <a href="{% url 'task3:platform' %}"><h3>Вернуться обратно</h3></a>
+        <a href="{% url 'task3:platform' %}"><h3>{{ back_button }}</h3></a>
     </button>
 </body>
 </html>
