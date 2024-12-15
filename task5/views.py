@@ -2,7 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-users = ['John', ]
+users = ['John', 'Jack', 'User', 'Maike']
+info = []
+
 
 def sign_up_by_html(request):
     if request.method == "POST":
